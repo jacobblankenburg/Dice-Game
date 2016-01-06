@@ -2,7 +2,7 @@
 function randomNum () {
 	var rand;
 	rand = Math.floor((Math.random() * 10) + 2);  
-		return rand;
+	return rand;
 }
 
 function roll() {
@@ -35,7 +35,8 @@ function setScore(thisScore, roll) {
 		thisScore -= 7;
 	}else {
 		thisScore += roll;
-	}return thisScore;
+	}
+	return thisScore;
 }
 
 function showHide(button1, button2) {
@@ -50,10 +51,14 @@ function showHide(button1, button2) {
 	}
 }
 
+function reload () {
+	location.reload();
+}
+
 function checkWin(player, playerScore){
-	
 	if (playerScore >= 20) {
 		alert(player + " Wins!!!");
+		reload();
 	}
 }
 
@@ -65,37 +70,56 @@ function displayScore (player, score){
 	document.getElementById(player).innerHTML= score;
 }
 
+function userName () {
+	var name;
+
+	name = prompt("What is your name?");
+	return name;
+}
+
+function setPlayer(locale, player){
+	document.getElementById(locale).innerHTML= player;
+}
+
 function main (){
 	var button1;
 	var button2;
 	var thisRoll;
 	var player1Score;
 	var player2Score;
-		player1Score = 0;
-		player2Score = 0;
-		thisRoll = 0;
-		button1 = document.getElementById("button1");
-		button2 = document.getElementById("button2");
-		button2.style.display = "none";
-		button1.style.display = "block";
-		
-		button1.onclick= function rolls(){
-			thisRoll = roll();
-			display("player1Roll", thisRoll);
-			showHide(button1, button2);
-			player1Score = setScore(player1Score, thisRoll);
-			displayScore("p1score", player1Score);
-			checkWin("Player 1", player1Score);
-		}
+	var player1;
+	var player2;
+	
+	button1 = document.getElementById("button1");
+	button2 = document.getElementById("button2");
+	button2.style.display = "none";
+	button1.style.display = "block";
+	player1 = userName ();
+	player2 = userName ();
+	player1Score = 0;
+	player2Score = 0;
+	thisRoll = 0;
 
-		button2.onclick= function rolls(){
-			thisRoll = roll();
-			display("player2Roll", thisRoll);
-			showHide(button1, button2);
-			player2Score = setScore(player2Score, thisRoll);
-			displayScore("p2score", player2Score);
-			checkWin("Player 2", player2Score);
-		}
+	setPlayer("player1Name", player1);
+	setPlayer("player2Name", player2);
+
+	button1.onclick= function rolls(){
+		thisRoll = roll();
+		display("player1Roll", thisRoll);
+		showHide(button1, button2);
+		player1Score = setScore(player1Score, thisRoll);
+		displayScore("p1score", player1Score);
+		checkWin(player1, player1Score);
+	}
+
+	button2.onclick= function rolls(){
+		thisRoll = roll();
+		display("player2Roll", thisRoll);
+		showHide(button1, button2);
+		player2Score = setScore(player2Score, thisRoll);
+		displayScore("p2score", player2Score);
+		checkWin(player2, player2Score);
+	}
 }
 
 main();

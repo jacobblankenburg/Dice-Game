@@ -41,9 +41,11 @@ body {
 }
 #player1button{
 	margin-top: 50px;
+	display: inline-block;
 }
 #player2button{
 	margin-top: 50px;
+	display: inline-block;
 }
 
 u {
@@ -80,4 +82,30 @@ div.links {
 ul {
 	list-style-image: url(list-die.gif);
 	font-size: 26px;
+}
+#button1 {
+	background-color: blue; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	border-radius: 8px;
+	width: 250px;
+}
+#button2 {
+	background-color: red; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	border-radius: 8px;
+	width: 250px;
+
+
 }
