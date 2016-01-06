@@ -58,7 +58,7 @@ function reload () {
 function checkWin(player, playerScore){
 	if (playerScore >= 20) {
 		alert(player + " Wins!!!");
-		reload();
+		//reload();
 	}
 }
 
@@ -103,7 +103,7 @@ function main (){
 	setPlayer("player1Name", player1);
 	setPlayer("player2Name", player2);
 
-	button1.onclick= function rolls(){
+	button1.onclick= function (){
 		thisRoll = roll();
 		display("player1Roll", thisRoll);
 		showHide(button1, button2);
@@ -112,7 +112,7 @@ function main (){
 		checkWin(player1, player1Score);
 	}
 
-	button2.onclick= function rolls(){
+	button2.onclick= function (){
 		thisRoll = roll();
 		display("player2Roll", thisRoll);
 		showHide(button1, button2);
