@@ -13,7 +13,7 @@ th, td{
 }
 body {
 	text-align: center;
-    background:url(http://wallpoper.com/images/00/44/30/32/white-victorian-background_00443032.jpg);
+    background:url(backgroun-img.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -65,6 +65,6 @@ u {
 }
 
 ul {
-	list-style-image: url("http://www.bkgm.com/faq/gif/die-w2.gif");
+	list-style-image: url(list-die.gif);
 	font-size: 26px;
 }
