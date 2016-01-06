@@ -7,9 +7,6 @@ table {
 }
 th, td{
    height: 50px
-  
-  
-  
 }
 body {
 	text-align: center;
@@ -54,6 +51,22 @@ u {
 	padding-left: 45px;
 }
 
+div.links {
+	display: block;
+	height: 600px;
+	width: 21%;
+	float: left;
+	padding-left: 10px;
+	padding-right: 10px;
+    background-color: #D2B48C;
+	border: 10px inset #824D0A;
+	border-radius: 15px;
+    opacity: 0.85;
+    filter: alpha(opacity=60);
+	font-family: "Adobe Garamond Pro Bold", Georgia, "Times New Roman", Times, serif;
+	text-align: center;
+}
+/*
 #rules {
 	font-family:tahoma;
 	background-color: #c4ced4;
@@ -63,7 +76,7 @@ u {
 	margin-top: 50px;
 
 }
-
+*/
 ul {
 	list-style-image: url(list-die.gif);
 	font-size: 26px;
