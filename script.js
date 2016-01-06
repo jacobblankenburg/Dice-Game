@@ -89,18 +89,17 @@ function main (){
 	var player2Score;
 	var player1;
 	var player2;
-
-
+	
+	button1 = document.getElementById("button1");
+	button2 = document.getElementById("button2");
+	button2.style.display = "none";
+	button1.style.display = "block";
 	player1 = userName ();
 	player2 = userName ();
 	player1Score = 0;
 	player2Score = 0;
 	thisRoll = 0;
-	button1 = document.getElementById("button1");
-	button2 = document.getElementById("button2");
-	button2.style.display = "none";
-	button1.style.display = "block";
-	
+
 	setPlayer("player1Name", player1);
 	setPlayer("player2Name", player2);
 
