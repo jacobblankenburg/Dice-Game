@@ -2,7 +2,7 @@
 function randomNum () {
 	var rand;
 	rand = Math.floor((Math.random() * 10) + 2);  
-		return rand;
+	return rand;
 }
 
 function roll() {
@@ -35,7 +35,8 @@ function setScore(thisScore, roll) {
 		thisScore -= 7;
 	}else {
 		thisScore += roll;
-	}return thisScore;
+	}
+	return thisScore;
 }
 
 function showHide(button1, button2) {
