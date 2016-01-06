@@ -2,12 +2,13 @@ table {
     table-layout: fixed;
 	width: 100%;
 	border-collapse: collapse;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: sans-serif;
 	border: 1px solid black
 }
 th, td{
    border: 1px solid black;
    height: 50px
+  
   
   
 }
@@ -20,9 +21,19 @@ body {
     text-align: center;
 }
 #player1table {
-	margin-top: 20px;
+	font-family: "Arial Verdana", Sans-serif;
+	margin-top: 50px;
 	color: blue;
+	background: white;
 }
 #player2table{
-    border-color: red;
+   margin-top: 50px;
+   color: red;
+   background: white;
+}
+#player1button{
+	margin-top: 50px;
+}
+#player2button{
+	margin-top: 50px;
 }
