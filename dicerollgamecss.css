@@ -37,3 +37,23 @@ body {
 #player2button{
 	margin-top: 50px;
 }
+
+u {
+	font-size: 30px;
+	padding-left: 45px;
+}
+
+#rules {
+	font-family:tahoma;
+	background-color: #c4ced4;
+	border-style: groove;
+	border-width: 3px;
+	text-align: left;
+	margin-top: 50px;
+
+}
+
+ul {
+	list-style-image: url("http://www.bkgm.com/faq/gif/die-w2.gif");
+	font-size: 26px;
+}
