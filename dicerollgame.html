@@ -6,39 +6,40 @@
 	</head>
 <body>
 <h3 id="text">Dice Roll Game</h3>
-	<div id=player1button>
-		<button type="button">PLAYER 1 ROLL</button>
+	<div id="player1button">
+		
 	</div>
-	<div id=player1table>
+	<div id="player1table">
 <table>
 	<tr>
 	<th colspan="2">PLAYER 1</th>
 	</tr>
 		<tr>
 		<th>CURRENT ROLL:</th>
-		<th>ONGOING NUMBER:</th>
+		<th>Player 1 Score:</th>
 	</tr>
 	<tr>
-	<td></td>
-	<td></td>
+	<td id="player1Roll"></td>
+	<td id="p1score">0</td>
 	</tr>
 </table>
 	</div>
-	<div id=player2button>
-	<button type="button">PLAYER 2 ROLL</button>
-		</div>
-	<div id=player2table>
+	<div id="player2button">
+		<button type="button" id="button2">PLAYER 2 ROLL</button>
+		<button type="button" id="button1">PLAYER 1 ROLL</button>
+	</div>
+	<div id="player2table">
 <table>
 	<tr>
 	<th colspan="2">PLAYER 2</th>
 	</tr>
 	<tr>
 		<th>CURRENT ROLL:</th>
-		<th>ONGOING NUMBER:</th>
+		<th>Player 2 Score:</th>
 	</tr>
 	<tr>
-	<td></td>
-	<td></td>
+	<td id="player2Roll"></td>
+	<td id="p2score">0</td>
 	</tr>
 </table>
 	</div>
@@ -53,5 +54,6 @@
 				</ul>
 		</p>
 	</div>
+	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
