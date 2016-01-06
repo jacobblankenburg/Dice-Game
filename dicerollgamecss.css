@@ -27,7 +27,7 @@ body {
 	font-family: "Arial Verdana", Sans-serif;
 	margin-top: 50px;
 	color: blue;
-	background: white;
+	background: black;
 	margin-left:auto; 
     margin-right:auto; 
 }
@@ -38,7 +38,7 @@ body {
     height: 150px; 
 	margin-top: 50px;
 	color: red;
-	background: white;
+	background: black;
 	margin-left:auto; 
     margin-right:auto; 
 }
