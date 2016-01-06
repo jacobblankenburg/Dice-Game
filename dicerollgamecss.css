@@ -44,9 +44,11 @@ body {
 }
 #player1button{
 	margin-top: 50px;
+	display: inline-block;
 }
 #player2button{
 	margin-top: 50px;
+	display: inline-block;
 }
 
 u {
