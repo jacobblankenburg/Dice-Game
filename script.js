@@ -58,7 +58,7 @@ function reload () {
 function checkWin(player, playerScore){
 	if (playerScore >= 20) {
 		alert(player + " Wins!!!");
-		//reload();
+		reload();
 	}
 }
 
