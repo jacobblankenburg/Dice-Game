@@ -50,10 +50,14 @@ function showHide(button1, button2) {
 	}
 }
 
+function reload () {
+	location.reload();
+}
+
 function checkWin(player, playerScore){
-	
 	if (playerScore >= 20) {
 		alert(player + " Wins!!!");
+		reload();
 	}
 }
 
