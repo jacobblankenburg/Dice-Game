@@ -1,0 +1,28 @@
+table {
+    table-layout: fixed;
+	width: 100%;
+	border-collapse: collapse;
+	font-family: Arial, Helvetica, sans-serif;
+	border: 1px solid black
+}
+th, td{
+   border: 1px solid black;
+   height: 50px
+  
+  
+}
+body {
+	text-align: center;
+    background:url(http://wallpoper.com/images/00/44/30/32/white-victorian-background_00443032.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    text-align: center;
+}
+#player1table {
+	margin-top: 20px;
+	color: blue;
+}
+#player2table{
+    border-color: red;
+}
