@@ -3,10 +3,9 @@ table {
 	width: 100%;
 	border-collapse: collapse;
 	font-family: sans-serif;
-	border: 1px solid black
+	
 }
 th, td{
-   border: 1px solid black;
    height: 50px
   
   
@@ -21,19 +20,51 @@ body {
     text-align: center;
 }
 #player1table {
+	border-radius: 20px;
+    border: 2px solid blue;
+	width: 500px;
+    height: 150px; 
 	font-family: "Arial Verdana", Sans-serif;
 	margin-top: 50px;
 	color: blue;
 	background: white;
+	margin-left:auto; 
+    margin-right:auto; 
 }
 #player2table{
-   margin-top: 50px;
-   color: red;
-   background: white;
+	border-radius: 20px;
+    border: 2px solid red;
+	width: 500px;
+    height: 150px; 
+	margin-top: 50px;
+	color: red;
+	background: white;
+	margin-left:auto; 
+    margin-right:auto; 
 }
 #player1button{
 	margin-top: 50px;
 }
 #player2button{
 	margin-top: 50px;
+}
+
+u {
+	font-size: 30px;
+	padding-left: 45px;
+}
+
+#rules {
+	font-family:tahoma;
+	background-color: #c4ced4;
+	border-style: groove;
+	border-width: 3px;
+	text-align: left;
+	margin-top: 50px;
+
+}
+
+ul {
+	list-style-image: url("http://www.bkgm.com/faq/gif/die-w2.gif");
+	font-size: 26px;
 }
