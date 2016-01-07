@@ -70,9 +70,9 @@ function displayScore (player, score){
 	document.getElementById(player).innerHTML= score;
 }
 
-function userName () {
+function userName (player) {
 	var name;
-	name = prompt("What is your name?");
+	name = prompt("What is " + player + " player name?");
 	return name;
 }
 
@@ -93,8 +93,8 @@ function main (){
 	button2 = document.getElementById("button2");
 	button2.style.display = "none";
 	button1.style.display = "block";
-	player1 = userName ();
-	player2 = userName ();
+	player1 = userName ("first");
+	player2 = userName ("second");
 	player1Score = 0;
 	player2Score = 0;
 	thisRoll = 0;
