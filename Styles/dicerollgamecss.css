@@ -1,0 +1,155 @@
+body {
+	margin: auto;
+	width: 839px;
+	font-family:"Adobe Garamond Pro Bold", Georgia, "Times New Roman", Times, serif;
+	font-size: 16px;
+	background: url(pictures/background.jpg);
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	background-position: center;
+}
+* {
+	margin: 3 auto 3 auto;
+}
+div.heading {
+	display: block; 
+	height:200px;
+	width: 800px;
+	position: relative;
+	padding-left: 10px;
+	padding-right: 10px;
+	overflow: hidden; 
+    margin: 20px auto;
+	background-image: url(pictures/title.jpg);
+	background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: #C8C8C8;
+	border: 10px inset #000000;
+	border-radius: 15px;
+
+	text-align: center;
+	vertical-align: center;
+	font-family: "Adobe Garamond Pro Bold", Georgia, "Times New Roman", Times, serif;
+}
+p.a {
+	display: block;
+	font-size: 20px;
+}
+div.rules {
+	height: 340px;
+	width: 38%;
+	float: left;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	padding-left: 10px;
+	padding-right: 10px;
+    background-color: #C8C8C8;
+	border: 10px inset #000000;
+	border-radius: 15px;
+    opacity: 0.85;
+    filter: alpha(opacity=60);
+	font-family: "Adobe Garamond Pro Bold", Georgia, "Times New Roman", Times, serif;
+
+}
+
+div.gamePlay {
+	margin: middle;
+	display: block;
+	width: 50%;
+	height: 480px;
+	float: right;
+	padding: 10px;
+    background-color: #C8C8C8;
+	border: 10px inset #000000;
+	border-radius: 15px;
+    opacity: 0.85;
+    filter: alpha(opacity=60);
+	font-family: "Adobe Garamond Pro Bold", Georgia, "Times New Roman", Times, serif;
+	overflow-x: hidden;
+	overflow-y: hidden scroll;	
+	display: inline-block;
+	text-align: center;
+}
+
+#player1table {
+	padding: 10px;
+	border-radius: 20px;
+    border: 2px solid blue;
+	width: 380px;
+    height: 150px; 
+	font-family: "Arial Verdana", Sans-serif;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: blue;
+	background: black;
+	margin-left:auto; 
+    margin-right:auto; 
+	text-align: center;
+}
+#player2table{
+	padding: 10px;
+	border-radius: 20px;
+    border: 2px solid red;
+	width: 380px;
+    height: 150px; 
+	font-family: "Arial Verdana", Sans-serif;
+	margin-top: 20px;
+	color: red;
+	background: black;
+	margin-left:auto; 
+    margin-right:auto; 
+	text-align: center;
+}
+
+#player2button{
+	display: inline-block;
+}
+
+table {
+    table-layout: fixed;
+	width: 100%;
+	border-collapse: collapse;
+	font-family: sans-serif;
+	
+}
+
+th, td{
+   height: 50px
+}
+
+#button1 {
+	background-color: blue; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	border-radius: 8px;
+	width: 380px;
+}
+#button2 {
+	background-color: red; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	border-radius: 8px;
+	width: 380px;
+
+
+}
+
+ul {
+	list-style-image: url(pictures/list-die.gif);
+	font-size: 20px;
+}
+
+h1 {
+	text-align: left;
+	text-shadow: 1px 1px;
+}
