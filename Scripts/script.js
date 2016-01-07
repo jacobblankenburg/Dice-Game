@@ -60,6 +60,9 @@ function displayScore (player, score){
 function userName (player) {
 	var name;
 	name = prompt("What is " + player + " player name?");
+	if (name === "") {
+		name = userName(player);
+	}
 	return name;
 }
 
