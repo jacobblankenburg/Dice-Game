@@ -8,9 +8,6 @@ body {
 	background-size: 100% 100%;
 	background-position: center;
 }
-* {
-	margin: 3 auto 3 auto;
-}
 div.heading {
 	display: block; 
 	height:200px;
@@ -31,10 +28,6 @@ div.heading {
 	vertical-align: center;
 	font-family: "Adobe Garamond Pro Bold", Georgia, "Times New Roman", Times, serif;
 }
-p.a {
-	display: block;
-	font-size: 20px;
-}
 div.rules {
 	height: 340px;
 	width: 38%;
@@ -51,7 +44,6 @@ div.rules {
 	font-family: "Adobe Garamond Pro Bold", Georgia, "Times New Roman", Times, serif;
 
 }
-
 div.gamePlay {
 	margin: middle;
 	display: block;
@@ -70,7 +62,6 @@ div.gamePlay {
 	display: inline-block;
 	text-align: center;
 }
-
 #player1table {
 	padding: 10px;
 	border-radius: 20px;
@@ -100,11 +91,35 @@ div.gamePlay {
     margin-right:auto; 
 	text-align: center;
 }
-
 #player2button{
 	display: inline-block;
 }
-
+#button1 {
+	width: 380px;
+	background-color: blue;
+    border: none;
+	border-radius: 8px;	
+    color: white;
+	padding: 10px;
+    text-align: center;
+    text-decoration: none;
+	font-size: 25px;
+	font-weight: bold;
+    display: inline-block;
+}
+#button2 {
+	width: 380px;
+	background-color: red; 
+    border: none;
+	border-radius: 8px;
+    color: white;
+	padding: 10px;
+    text-align: center;
+    text-decoration: none;
+	font-size: 25px;
+	font-weight: bold;
+    display: inline-block;
+}
 table {
     table-layout: fixed;
 	width: 100%;
@@ -112,44 +127,12 @@ table {
 	font-family: sans-serif;
 	
 }
-
 th, td{
-   height: 50px
+   height: 50px;
+   font-size: 20px;
+   font-weight: bold;
 }
-
-#button1 {
-	background-color: blue; 
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-	border-radius: 8px;
-	width: 380px;
-}
-#button2 {
-	background-color: red; 
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-	border-radius: 8px;
-	width: 380px;
-
-
-}
-
 ul {
 	list-style-image: url(pictures/list-die.gif);
 	font-size: 20px;
-}
-
-h1 {
-	text-align: left;
-	text-shadow: 1px 1px;
 }
