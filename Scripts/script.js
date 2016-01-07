@@ -56,8 +56,9 @@ function reload () {
 }
 
 function checkWin(player, playerScore){
-	if (playerScore >= 20) {
-		alert(player + " Wins!!!");
+	if (playerScore >= 25) {
+		window.setTimeout(alert(player + " Wins!!!"), 1000);
+		//alert(player + " Wins!!!");
 		reload();
 	}
 }
@@ -93,7 +94,7 @@ function main (){
 	button1 = document.getElementById("button1");
 	button2 = document.getElementById("button2");
 	button2.style.display = "none";
-	button1.style.display = "block";
+	button1.style.dis play = "block";
 	player1 = userName ();
 	player2 = userName ();
 	player1Score = 0;
@@ -103,7 +104,7 @@ function main (){
 	setPlayer("player1Name", player1);
 	setPlayer("player2Name", player2);
 
-	button1.onclick= function rolls(){
+	button1.onclick= function (){
 		thisRoll = roll();
 		display("player1Roll", thisRoll);
 		showHide(button1, button2);
@@ -112,7 +113,7 @@ function main (){
 		checkWin(player1, player1Score);
 	}
 
-	button2.onclick= function rolls(){
+	button2.onclick= function (){
 		thisRoll = roll();
 		display("player2Roll", thisRoll);
 		showHide(button1, button2);
