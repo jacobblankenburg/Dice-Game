@@ -92,7 +92,7 @@ function main (){
 	button1 = document.getElementById("button1");
 	button2 = document.getElementById("button2");
 	button2.style.display = "none";
-	button1.style.dis play = "block";
+	button1.style.display = "block";
 	player1 = userName ();
 	player2 = userName ();
 	player1Score = 0;

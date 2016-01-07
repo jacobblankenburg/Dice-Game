@@ -57,8 +57,7 @@ function reload () {
 
 function checkWin(player, playerScore){
 	if (playerScore >= 25) {
-		window.setTimeout(alert(player + " Wins!!!"), 1000);
-		//alert(player + " Wins!!!");
+		alert(player + " Wins!!!");
 		reload();
 	}
 }
