@@ -1,5 +1,5 @@
 "use strict";
-function randomNum () {
+function getRandomNum () {
 	var rand;
 	rand = Math.floor((Math.random() * 10) + 2);  
 	return rand;
@@ -7,24 +7,11 @@ function randomNum () {
 
 function roll() {
 	var roll;
-	var checkedRoll;
 	roll = 0;
 	while (roll === 0 || roll === 1) {
-		roll = randomNum();
+		roll = getRandomNum();
 	}
 	return roll;
-}
-
-function checkRoll (roll) {
-	var myRoll;
-	if (roll === 3 || roll === 4 || roll === 5 || roll === 6 || roll === 8 || roll === 9 || roll === 10 || roll === 11 || roll === 12) {
-		myRoll = roll;
-	}else if (roll === 2) {
-		myRoll = 0;
-	}else if (roll === 7) {
-		myRoll = (-7);
-	}
-	return myRoll;
 }
 
 function setScore(thisScore, roll) {
@@ -51,18 +38,18 @@ function showHide(button1, button2) {
 	}
 }
 
-function reload () {
+function reloadPage () {
 	location.reload();
 }
 
 function checkWin(player, playerScore){
 	if (playerScore >= 25) {
 		alert(player + " Wins!!!");
-		reload();
+		reloadPage();
 	}
 }
 
-function display (playerRow, thisRoll) {
+function displayCurrentRoll (playerRow, thisRoll) {
 	document.getElementById(playerRow).innerHTML= thisRoll;
 }
 
@@ -104,7 +91,7 @@ function main (){
 
 	button1.onclick= function (){
 		thisRoll = roll();
-		display("player1Roll", thisRoll);
+		displayCurrentRoll("player1Roll", thisRoll);
 		showHide(button1, button2);
 		player1Score = setScore(player1Score, thisRoll);
 		displayScore("p1score", player1Score);
@@ -113,7 +100,7 @@ function main (){
 
 	button2.onclick= function (){
 		thisRoll = roll();
-		display("player2Roll", thisRoll);
+		displayCurrentRoll("player2Roll", thisRoll);
 		showHide(button1, button2);
 		player2Score = setScore(player2Score, thisRoll);
 		displayScore("p2score", player2Score);
