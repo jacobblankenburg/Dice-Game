@@ -14,17 +14,8 @@ function setPlayer(locale, player){
 
 function getRandomNum () {
 	var rand;
-	rand = Math.floor((Math.random() * 10) + 2);  
+	rand = (1+ Math.floor(Math.random() * 6)) + (1+ Math.floor(Math.random() * 6));  
 	return rand;
-}
-
-function roll() {
-	var roll;
-	roll = 0;
-	while (roll === 0 || roll === 1) {
-		roll = getRandomNum();
-	}
-	return roll;
 }
 
 function displayCurrentRoll (playerRow, thisRoll) {
@@ -97,7 +88,7 @@ function main (){
 	setPlayerName("player2Name", player2);
 
 	button1.onclick= function (){
-		thisRoll = roll();
+		thisRoll = getRandomNum();
 		displayCurrentRoll("player1Roll", thisRoll);
 		showHide(button1, button2);
 		player1Score = setScore(player1Score, thisRoll);
@@ -106,7 +97,7 @@ function main (){
 	}
 
 	button2.onclick= function (){
-		thisRoll = roll();
+		thisRoll = getRandomNum();
 		displayCurrentRoll("player2Roll", thisRoll);
 		showHide(button1, button2);
 		player2Score = setScore(player2Score, thisRoll);
