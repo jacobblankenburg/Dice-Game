@@ -63,16 +63,15 @@ function reloadPage () {
 	location.reload();
 }
 
-<<<<<<< HEAD
 function setPlayerName(locale, player){
 	document.getElementById(locale).innerHTML= player;
-=======
+}
+
 function checkWin(player, playerScore){
 	if (playerScore >= 25) {
 		alert(player + " Wins!!!");
 		reloadPage();
 	}
->>>>>>> 4586f17873a7bb71d477ec854d3279feaaa5e455
 }
 
 function main (){
