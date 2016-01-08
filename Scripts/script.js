@@ -66,7 +66,7 @@ function userName (player) {
 	return name;
 }
 
-function setPlayer(locale, player){
+function setPlayerName(locale, player){
 	document.getElementById(locale).innerHTML= player;
 }
 
@@ -89,8 +89,8 @@ function main (){
 	player2Score = 0;
 	thisRoll = 0;
 
-	setPlayer("player1Name", player1);
-	setPlayer("player2Name", player2);
+	setPlayerName("player1Name", player1);
+	setPlayerName("player2Name", player2);
 
 	button1.onclick= function (){
 		thisRoll = roll();
