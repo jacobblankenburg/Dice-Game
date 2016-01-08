@@ -1,4 +1,17 @@
 "use strict";
+function userName (player) {
+	var name;
+	name = prompt("What is " + player + " player name?");
+	if (name === "") {
+		name = userName(player);
+	}
+	return name;
+}
+
+function setPlayer(locale, player){
+	document.getElementById(locale).innerHTML= player;
+}
+
 function getRandomNum () {
 	var rand;
 	rand = Math.floor((Math.random() * 10) + 2);  
@@ -14,16 +27,8 @@ function roll() {
 	return roll;
 }
 
-function setScore(thisScore, roll) {
-	var thisScore;
-	if (roll === 2) {
-		thisScore = 0;
-	}else if (roll === 7) {
-		thisScore -= 7;
-	}else {
-		thisScore += roll;
-	}
-	return thisScore;
+function displayCurrentRoll (playerRow, thisRoll) {
+	document.getElementById(playerRow).innerHTML= thisRoll;
 }
 
 function showHide(button1, button2) {
@@ -38,36 +43,36 @@ function showHide(button1, button2) {
 	}
 }
 
-function reloadPage () {
-	location.reload();
-}
-
-function checkWin(player, playerScore){
-	if (playerScore >= 25) {
-		alert(player + " Wins!!!");
-		reloadPage();
+function setScore(thisScore, roll) {
+	var thisScore;
+	if (roll === 2) {
+		thisScore = 0;
+	}else if (roll === 7) {
+		thisScore -= 7;
+	}else {
+		thisScore += roll;
 	}
-}
-
-function displayCurrentRoll (playerRow, thisRoll) {
-	document.getElementById(playerRow).innerHTML= thisRoll;
+	return thisScore;
 }
 
 function displayScore (player, score){
 	document.getElementById(player).innerHTML= score;
 }
 
-function userName (player) {
-	var name;
-	name = prompt("What is " + player + " player name?");
-	if (name === "") {
-		name = userName(player);
-	}
-	return name;
+function reloadPage () {
+	location.reload();
 }
 
+<<<<<<< HEAD
 function setPlayerName(locale, player){
 	document.getElementById(locale).innerHTML= player;
+=======
+function checkWin(player, playerScore){
+	if (playerScore >= 25) {
+		alert(player + " Wins!!!");
+		reloadPage();
+	}
+>>>>>>> 4586f17873a7bb71d477ec854d3279feaaa5e455
 }
 
 function main (){
